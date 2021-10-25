@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="bg">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span id="tsp"></span>
+          <span id="tm">Simple Calculator</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <span id="tsp"></span>
+          <span id="tm">First Number:{{num1}}</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <span id="tsp"></span>
+          <span id="tm">Second Number:{{num2}}</span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <br>
+      <div id="bu">
+        <mat-card>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="add()" id="a">Addition of two numbers (<mat-icon>addition</mat-icon>)</button>
+            <br>
+            <button mat-raised-button color="primary" (click)="sub()" id="b">Subtraction of two numbers (<mat-icon>remove</mat-icon>)</button>
+            <mat-card-subtitle *ngIf="check==0">Sum is {{sum}}</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="check==1">Difference is {{dif}}</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="check==2">Product is {{mult}}</mat-card-subtitle>
+            <br>
+            <button mat-raised-button color="primary" (click)="mul()" id="c">Multiplication of two numbers (<mat-icon>clear</mat-icon>)</button>
+          </mat-card-actions>
+        </mat-card>
+        <br>
+        <mat-card>
+          <mat-card-actions>
+            <button mat-raised-button color="accent" (click)="divi()" id="d">Division of two numbers (&divide;)</button>
+            <mat-card-subtitle *ngIf="check==3">Quotient is {{quo}}</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="check==4">Remainder is {{modulo}}</mat-card-subtitle>
+            <br>
+            <button mat-raised-button color="accent" (click)="modu()" id="e">Modulus (<mat-icon>percent</mat-icon>)</button>
+          </mat-card-actions>
+        </mat-card>
+        <br>
+        <mat-card>
+          <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="facto()" id="f">Factorial of a number (&excl;)</button>
+            <mat-card-subtitle *ngIf="check==5">Factorial of {{num1}} is {{fact1}}</mat-card-subtitle>
+            <br>
+            <mat-card-subtitle *ngIf="check==5">Factorial of {{num2}} is {{fact2}}</mat-card-subtitle>
+          </mat-card-actions>
+        </mat-card>
+        <br>
+        <mat-card>
+          <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="primenum()" id="g">Checks Prime or Comosite number</button>
+            <mat-card-subtitle *ngIf="flag1==0 && check==6">{{num1}} is Prime number</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="flag1!=0 && check==6">{{num1}} is Composite number</mat-card-subtitle>
+            <br>
+            <mat-card-subtitle *ngIf="flag2==0 && check==6">{{num2}} is Prime number</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="flag2!=0 && check==6">{{num2}} is Composite number</mat-card-subtitle>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </body>
+</html>

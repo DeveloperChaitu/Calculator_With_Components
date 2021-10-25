@@ -1,0 +1,82 @@
+body
+{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+#bg
+{
+    background-color:peru;
+    position: relative;
+    top: 60px;
+}
+#tsp
+{
+    padding: 200px;
+}
+#tm
+{
+    color: royalblue;
+    font-size: 55px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+h3
+{
+    color:rgb(53, 23, 245);
+    font-size: 45px;
+    text-align:center;
+}
+#bu
+{
+    border: 1px solid black;
+    border-width: 1px;
+    border-radius: 2px;
+}
+button
+{
+    border:1px solid black;
+    border-width: 1px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    display:block;
+}
+button:hover
+{
+    background-color:teal;
+    color:rgb(236, 130, 30);
+}
+#a
+{
+    padding: 20px 80px;
+}
+#b
+{
+    padding: 20px 65px;
+}
+#c
+{
+    padding: 20px 48px;
+}
+#d
+{
+  padding: 20px 82px;  
+}
+#e
+{
+  padding: 20px 177px;  
+}
+#f
+{
+  padding: 20px 102px;  
+}
+mat-card-subtitle
+{
+    color:rgb(255, 0, 0);
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    position: relative;
+    left:600px;
+}
